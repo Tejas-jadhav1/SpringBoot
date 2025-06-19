@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="abc" class="com.fy.Adress" primary="true">
+		<constructor-arg name="pin" value="78"></constructor-arg>
+		<constructor-arg name="c_name" value="Satara"></constructor-arg>
+	</bean>
+	
+	
+	<bean id="xyz" class="com.fy.Adress">
+		<constructor-arg name="pin" value="78"></constructor-arg>
+		<constructor-arg name="c_name" value="Satara"></constructor-arg>
+	</bean>
+	
+	<bean id="stu" class="com.fy.Student" autowire="constructor">
+	<constructor-arg name="roll" value="76"></constructor-arg>
+	<constructor-arg name="name" value="tejas"></constructor-arg>	
+	</bean>
+
+</beans>
